@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Contact Edit From">
+        <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName} onsubmit={handleSubmit}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name={lastNameField} ></lightning-input-field>
+            <lightning-input-field field-name={firstNameField} ></lightning-input-field>
+            <lightning-button variant="brand" label="Update Record" type="submit"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+    <lightning-card title="Contact View Form">
+        <lightning-record-view-form record-id={recordId} object-api-name={objectApiName} density="compact">
+            <lightning-output-field field-name={nameField}></lightning-output-field>
+        </lightning-record-view-form>
+    </lightning-card>
+</template>
